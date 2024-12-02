@@ -1,5 +1,8 @@
 :root {
-  --primary-color: darkblue;
+  --primary-color: #310e31;
+  --secondary-color: #431322;
+  --accent1-color: #1a936f;
+  --accent2-color: #004643;
 }
 
 nav {
