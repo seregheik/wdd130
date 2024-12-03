@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #310e31;
+  --secondary-color: #431322;
+  --accent1-color: #1a936f;
+  --accent2-color: #004643;
+}
+body {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  max-width: 1366px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Markazi Text", serif;
+}
+nav > a {
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero > img {
+  width: 100%;
+  height: auto;
+}
+.hero > h1 {
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 100%;
+}
+.hero > article {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  right: 16px;
+}
+
+article > img {
+  float: right;
+}
