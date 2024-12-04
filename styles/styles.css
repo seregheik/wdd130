@@ -7,7 +7,11 @@
   --accent1-color: #1a936f;
   --accent2-color: #004643;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
@@ -20,7 +24,14 @@ h5,
 h6 {
   font-family: "Markazi Text", serif;
 }
+header,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
 nav {
+  display: flex;
+  justify-content: space-evenly;
   background-color: var(--primary-color);
   padding: 10px;
 }
@@ -31,7 +42,6 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
 h1 {
   color: var(--primary-color);
 }
@@ -45,17 +55,20 @@ img {
 p {
   padding: 0;
 }
-main {
-  max-width: 840px;
-}
 aside {
-  width: 20rem;
+  width: 20em;
   margin: 1rem;
   border: 1px solid black;
   padding: 1rem;
   background-color: #eee;
   color: #222121;
   text-align: center;
+}
+aside,
+h2 {
+  position: absolute;
+  top: 250px;
+  left: 130px;
 }
 aside img {
   width: 200px;
@@ -64,9 +77,18 @@ aside img {
 main img {
   width: 150px;
   height: auto;
+  float: right;
 }
 footer {
   margin-top: 15px;
   border-top: 1px solid black;
   text-align: center;
+}
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
