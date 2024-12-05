@@ -14,7 +14,6 @@
 }
 body {
   font-family: "Roboto Flex", sans-serif;
-  font-optical-sizing: auto;
 }
 h1,
 h2,
@@ -95,7 +94,6 @@ footer {
   border-top: 1px solid black;
   text-align: center;
 }
-
 /* Class Selectors */
 .box {
   margin: 1rem;
