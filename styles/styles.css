@@ -25,6 +25,7 @@ h6 {
   font-family: "Markazi Text", serif;
 }
 header,
+.grid,
 footer {
   max-width: 840px;
   margin: 0 auto;
@@ -44,6 +45,9 @@ nav a {
 }
 h1 {
   color: var(--primary-color);
+  font-size: 50px;
+  border-bottom: 1px solid var(--primary-color);
+  margin: 10px;
 }
 img {
   width: 150px;
@@ -58,12 +62,15 @@ p {
 aside {
   position: relative;
   width: 20em;
+  height: auto;
   margin: 1rem;
   border: 1px solid black;
   padding: 1rem;
   background-color: #eee;
   color: #222121;
   text-align: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 aside h2 {
   position: absolute;
@@ -75,7 +82,7 @@ aside img {
   height: auto;
 }
 main {
-  max-width: 640px;
+  grid-column: 2/4;
 }
 main img {
   width: 150px;
@@ -88,6 +95,7 @@ footer {
   border-top: 1px solid black;
   text-align: center;
 }
+
 /* Class Selectors */
 .box {
   margin: 1rem;
@@ -95,4 +103,9 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
