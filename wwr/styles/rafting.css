@@ -4,10 +4,18 @@
   --accent1-color: #1a936f;
   --accent2-color: #004643;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto Flex", sans-serif;
   max-width: 1024px;
+  margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -18,7 +26,33 @@ h6 {
 }
 nav > a {
   text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
 }
+header {
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #dfdfdf;
+}
+
+header img {
+  grid-column: 1/2;
+  width: 70px;
+}
+header nav {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: space-evenly;
+}
+article > img {
+  position: relative;
+  float: right;
+  width: 350px;
+}
+
+/* class selectors  */
 .hero {
   position: relative;
   text-align: center;
@@ -41,6 +75,55 @@ nav > a {
   padding-left: 20px;
 }
 
-article > img {
-  float: right;
+.history {
+  padding: 20px 0 20px 0;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.history img {
+  width: 100%;
+}
+.history h2 {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+.history * {
+  grid-column: span 1;
+}
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  align-items: center;
+  min-width: 0;
+}
+.adventure h2 {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: 1/-1;
+}
+.adventure img {
+  max-width: 100%;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+.footer p {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer > nav {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-evenly;
 }
