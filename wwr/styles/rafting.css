@@ -118,6 +118,18 @@ article > img {
 .adventure img {
   max-width: 100%;
 }
+figure {
+  /* padding: 2px; */
+  border: 1px solid var(--primary-color);
+  border-radius: 2px;
+  background-color: var(--primary-color);
+}
+figcaption {
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
