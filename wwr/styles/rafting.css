@@ -256,6 +256,7 @@ form > button {
   font-weight: 600;
   font-size: 1rem;
   border-radius: 10px;
+  border: none;
 }
 h3,
 h2,
