@@ -22,6 +22,7 @@
         </nav>
     </header>
     <main>
+        <h1>White Water Rafting Company</h1>
         <section class="contact-info">
             <div class="company-details">
                 <address>
@@ -51,16 +52,19 @@
                             <input type="email" id="email" name="email" placeholder="Your Email"
                               required>
                         </div>
+
                         <div class="form-item radio-group">
                             <p>Message Purpose</p>
                             <div>
-                                <label><input type="radio" name="purpose" value="inquiry" checked>
+                                <label for="inquiry"><input type="radio" id="inquiry" name="purpose"
+                                      value="inquiry" checked>
                                     General Inquiry</label>
-                                <label><input type="radio" name="purpose" value="reservation">
+                                <label for="reservation"><input type="radio" id="reservation"
+                                      name="purpose" value="reservation">
                                     Reservation Question</label>
-                                <label><input type="radio" name="purpose" value="suggestion">
-                                    Website
-                                    Suggestion</label>
+                                <label for="suggestion"><input type="radio" id="suggestion"
+                                      name="purpose" value="suggestion">
+                                    Website Suggestion</label>
                             </div>
                         </div>
                         <div class="form-item">
@@ -69,7 +73,8 @@
                               placeholder="Your Message" required></textarea>
                         </div>
                         <div class="form-item checkbox-group">
-                            <label><input type="checkbox" name="newsletter"> Please subscribe me to
+                            <label for="newsletter"><input type="checkbox" id="newsletter"
+                                  name="newsletter"> Please subscribe me to
                                 the monthly newsletter</label>
                         </div>
                         <button type="submit">Get in Touch!</button>
